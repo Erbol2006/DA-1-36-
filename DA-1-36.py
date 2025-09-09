@@ -35,7 +35,24 @@ print(proportions)
 print("\nСумма всех долей равна единицк: ",
 proportions.sum()) 
 
+
+#ПУНКТ 1.2 и 1.3 Построение круговой диаграммы 
+
+#Создаем оси и фигуру для графика
+plt.figure(figsize=(9, 6))#задали размер фигуры
+
+#теперь строим PLE CHART
+plt.pie(proportions, labels=proportions.index, autopct='%1.1f%%', startangle=90)
+#proportions - рассчитанные доли в пунтке 1.1
+#labels=proportions.index - подписи к секторам, т.е названия видов
+#autopct=(...) - это еще одно волшебство которое подписывает проценты на секторах
+#startangle - начинает первый сектор с 90 градусов(сверзу)
+
+#Добавляем заголовок
+plt.title('Доли различных видов ирисов в датасете')
+plt.axis('equal') #чтобы диаграмма была круглой, а не сплюснутой
+plt.show()#показываю красоту
 #REFERENCES
 #1) https://pythonru.com/primery/sklearn-datasets
 #2) https://skillbox.ru/media/code/rabotaem-s-pandas-osnovnye-ponyatiya-i-realnye-dannye/
-#3) 
+#3) https://skillbox.ru/media/code/biblioteka-matplotlib-dlya-postroeniya-grafikov/
