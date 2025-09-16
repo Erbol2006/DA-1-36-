@@ -1,3 +1,5 @@
+import pandas as pd 
+import matplotlib.pyplot as plt
 from sklearn import datasets
 
 def load_and_prepare_data():
