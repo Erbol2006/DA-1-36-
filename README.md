@@ -1,31 +1,16 @@
-📊 О проекте
-Скрипт выполняет анализ пропорций категориальных данных:
+# Iris Species Proportions Analysis
 
-Подсчет долей каждого вида ирисов в датасете
+Python script that analyzes and visualizes the distribution of Iris flower species in the famous dataset.
 
-Визуализация результатов с помощью круговой диаграммы
+## What it does
 
-Автоматическое отображение процентов на диаграмме
+- Loads the Iris dataset from scikit-learn
+- Calculates species proportions (Setosa, Versicolor, Virginica)
+- Displays a pie chart with percentages
+- Shows balanced distribution (33.3% each species)
 
-🛠 Технологии
-Python 3
-
-Pandas - работа с табличными данными
-
-Matplotlib - построение графиков и визуализация
-
-Scikit-learn - загрузка встроенных датасетов
-
-🚀 Запуск
-Установите зависимости:
-
-bash
+# Install dependencies
 pip install pandas matplotlib scikit-learn
-Запустите скрипт:
 
-bash
+# Run the script
 python DA-1-36.py
-
-
-
-
